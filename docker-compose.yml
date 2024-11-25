@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  contact_db:
+    image: postgres:15
+    container_name: contact_db
+    environment:
+      POSTGRES_USER: contactuser
+      POSTGRES_PASSWORD: 1243
+      POSTGRES_DB: contactdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - contact_db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: contact_backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend/.env.txt
+    depends_on:
+      - contact_db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: contact_frontend
+    ports:
+      - "4173:4173"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  contact_db_data:
+    driver: local
