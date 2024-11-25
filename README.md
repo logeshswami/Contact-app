@@ -117,7 +117,7 @@ type Contact struct {
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-repo/contact-app.git
+   git clone https://github.com/logeshswami/Contact-app.git
    cd contact-app
    ```
 
@@ -186,7 +186,7 @@ volumes:
 
 ## Demo  
 
-Watch the live demo here: [Demo Video Link](#)  
+Watch the live demo here: [Demo Video Link](https://drive.google.com/file/d/1bJVZpxpDSHV5MktZDkN3RRlKvB_f1OmP/view?usp=sharing)  
 
 ---
 
