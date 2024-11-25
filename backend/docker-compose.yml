@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  contact_db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: contactuser
+      POSTGRES_PASSWORD: 1243
+      POSTGRES_DB: contactdb
+    ports:
+      - "5432:5432"  
+    volumes:
+      - contact_db_data:/var/lib/postgresql/data  # maintain db over time in docker img
+
+volumes:
+  contact_db_data:
