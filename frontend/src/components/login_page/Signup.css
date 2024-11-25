@@ -1,0 +1,121 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #d5dbf4;
+  color: #e0e0e0;
+  
+}
+.auth-div {
+  font-family: "Roboto", sans-serif;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+
+}
+
+
+.auth-container {
+  background: #222222;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.auth-form h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background: #333333;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-form input:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 8px rgba(72, 191, 227, 0.8);
+  border-color: #48bfe3;
+}
+
+
+.auth-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #48bfe3, #4361ee);
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-form button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 5px 10px rgba(72, 191, 227, 0.6);
+}
+
+
+.message {
+  margin-top: 1rem;
+  color: #e40505;
+  font-size: 0.9rem;
+}
+
+
+.switch-link {
+  margin-top: 1rem;
+  color: #48bfe3;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.switch-link:hover {
+  color: #4361ee;
+  text-decoration: underline;
+}
+.title-txt{
+
+font-size: 2.5rem; 
+color: #052d46e5; 
+text-align: center; 
+font-weight: bold; 
+letter-spacing: 1px; 
+margin: 20px 0; 
+padding: 10px; 
+border-bottom: 2px solid #0982d3;
+}
