@@ -126,7 +126,7 @@ const HomePage = ({ auth, onLogout }) => {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search contacts  ..."
+          placeholder="🔍Search contacts  ..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
