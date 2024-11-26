@@ -190,6 +190,6 @@ Watch the live demo here: [Demo Video Link](https://drive.google.com/file/d/1bJV
 
 ---
 
-## License  
+## CopyRights 
 
 © 2024 LogeshS  
