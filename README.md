@@ -23,7 +23,7 @@ A full-stack contact management application with login and signup functionality,
 - **Go Gin Framework**  
 - **GORM** (ORM for Go)  
 - **Google UUID**  
-- **Crypto**  
+- **Crypto** (for hashing password) 
 - **PostgreSQL Driver**  
 
 ### Database  
